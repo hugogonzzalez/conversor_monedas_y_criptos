@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import tasas from '../data/tasas.json'
 import SelectorMoneda from './SelectorMoneda'
+import Resultado from './Resultado'
 
 // TODO: importa SelectorMoneda y, en el paso 5, Resultado
 
@@ -18,6 +19,10 @@ function Conversor() {
   const resultado = cantidad / tasas[origen].tasa * tasas[destino].tasa
 
   // TODO (paso 5): función intercambiar() que invierte origen y destino
+  function intercambiar(){
+    setOrigen(destino)
+    setDestino(origen)
+  }
 
   return (
     <div className="conversor">
@@ -26,9 +31,11 @@ function Conversor() {
       {/* TODO: dos SelectorMoneda: "De" (origen) y "A" (destino) */}
       <SelectorMoneda etiqueta="De" valor={origen} onCambiar={setOrigen} />
       <SelectorMoneda etiqueta="A" valor={destino} onCambiar={setDestino} />
-      <p>{resultado}</p>
+      {/* <p>{resultado}</p> */}
       {/* TODO (paso 5): botón Intercambiar */}
+      <button onClick={intercambiar}>⇄ Intercambiar</button>
       {/* TODO (paso 5): componente Resultado con sus props */}
+      <Resultado cantidad={cantidad} origen={origen} destino={destino} valor={resultado} />
     </div>
   )
 }
