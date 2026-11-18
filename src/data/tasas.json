@@ -1,8 +1,8 @@
 {
   "EUR": { "nombre": "Euro", "simbolo": "€", "tasa": 1 },
   "USD": { "nombre": "Dolar estadounidense", "simbolo": "$", "tasa": 1.08 },
-  "GBP": { "nombre": "Libra esterlina", "simbolo": "£", "tasa": 0.85},
-  "JPY": { "nombre": "Yen japonés", "simbolo": "¥", "tasa": 162},
-  "BTC": { "nombre": "Bitcoin", "simbolo": "\u20BF", "tasa": 0.000011},
-  "ETH": { "nombre": "Ethereum", "simbolo": "Ξ", "tasa": 0.00031}
+  "GBP": { "nombre": "Libra esterlina", "simbolo": "£", "tasa": 0.85 },
+  "JPY": { "nombre": "Yen japonés", "simbolo": "¥", "tasa": 162 },
+  "BTC": { "nombre": "Bitcoin", "simbolo": "\u20BF", "tasa": 0.000011 },
+  "ETH": { "nombre": "Ethereum", "simbolo": "Ξ", "tasa": 0.00031 }
 }
