@@ -4,3 +4,33 @@
    .campo      -> cada etiqueta con su input o select
    .resultado  -> el párrafo con la cifra final
 */
+body {
+   background-color: #f3d1fb;
+}
+
+main {
+   max-width: 420px;
+   margin: 0 auto;
+}
+
+.conversor {
+   background-color: white;
+   border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.campo {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   font-weight: bold;
+}
+
+.resultado {
+   font-size: 24px;
+   text-align: center;
+}
